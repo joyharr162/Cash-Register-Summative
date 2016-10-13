@@ -131,27 +131,24 @@
             this.subtotalLabel.AutoSize = true;
             this.subtotalLabel.Location = new System.Drawing.Point(123, 158);
             this.subtotalLabel.Name = "subtotalLabel";
-            this.subtotalLabel.Size = new System.Drawing.Size(35, 13);
+            this.subtotalLabel.Size = new System.Drawing.Size(0, 13);
             this.subtotalLabel.TabIndex = 9;
-            this.subtotalLabel.Text = "label1";
             // 
             // taxLabel
             // 
             this.taxLabel.AutoSize = true;
             this.taxLabel.Location = new System.Drawing.Point(123, 187);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(35, 13);
+            this.taxLabel.Size = new System.Drawing.Size(0, 13);
             this.taxLabel.TabIndex = 10;
-            this.taxLabel.Text = "label2";
             // 
             // grandTotalLabel
             // 
             this.grandTotalLabel.AutoSize = true;
             this.grandTotalLabel.Location = new System.Drawing.Point(123, 221);
             this.grandTotalLabel.Name = "grandTotalLabel";
-            this.grandTotalLabel.Size = new System.Drawing.Size(35, 13);
+            this.grandTotalLabel.Size = new System.Drawing.Size(0, 13);
             this.grandTotalLabel.TabIndex = 11;
-            this.grandTotalLabel.Text = "label2";
             // 
             // receiptButton
             // 
@@ -211,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(404, 274);
             this.Controls.Add(this.tryCatchLabel);
             this.Controls.Add(this.titleLabel);
