@@ -41,10 +41,11 @@
             this.taxLabel = new System.Windows.Forms.Label();
             this.grandTotalLabel = new System.Windows.Forms.Label();
             this.receiptButton = new System.Windows.Forms.Button();
-            this.receiptLabel = new System.Windows.Forms.Label();
             this.tenderLabel = new System.Windows.Forms.Label();
             this.tenderBox = new System.Windows.Forms.TextBox();
             this.newOrderButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.tryCatchLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // carrotMuffinLabel
@@ -162,14 +163,6 @@
             this.receiptButton.UseVisualStyleBackColor = true;
             this.receiptButton.Click += new System.EventHandler(this.receiptButton_Click);
             // 
-            // receiptLabel
-            // 
-            this.receiptLabel.Location = new System.Drawing.Point(239, 65);
-            this.receiptLabel.Name = "receiptLabel";
-            this.receiptLabel.Size = new System.Drawing.Size(152, 194);
-            this.receiptLabel.TabIndex = 13;
-            this.receiptLabel.Text = "label2";
-            // 
             // tenderLabel
             // 
             this.tenderLabel.AutoSize = true;
@@ -194,16 +187,36 @@
             this.newOrderButton.TabIndex = 16;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.Font = new System.Drawing.Font("Giddyup Std", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(19, 3);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(198, 42);
+            this.titleLabel.TabIndex = 17;
+            this.titleLabel.Text = "label1";
+            // 
+            // tryCatchLabel
+            // 
+            this.tryCatchLabel.AutoSize = true;
+            this.tryCatchLabel.Location = new System.Drawing.Point(21, 42);
+            this.tryCatchLabel.Name = "tryCatchLabel";
+            this.tryCatchLabel.Size = new System.Drawing.Size(35, 13);
+            this.tryCatchLabel.TabIndex = 18;
+            this.tryCatchLabel.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 274);
+            this.Controls.Add(this.tryCatchLabel);
+            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.tenderBox);
             this.Controls.Add(this.tenderLabel);
-            this.Controls.Add(this.receiptLabel);
             this.Controls.Add(this.receiptButton);
             this.Controls.Add(this.grandTotalLabel);
             this.Controls.Add(this.taxLabel);
@@ -218,7 +231,7 @@
             this.Controls.Add(this.chocChipMuffinLabel);
             this.Controls.Add(this.carrotMuffinLabel);
             this.Name = "Form1";
-            this.Text = "$3.50";
+            this.Text = "Best Muffins Ever";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,10 +252,11 @@
         private System.Windows.Forms.Label taxLabel;
         private System.Windows.Forms.Label grandTotalLabel;
         private System.Windows.Forms.Button receiptButton;
-        private System.Windows.Forms.Label receiptLabel;
         private System.Windows.Forms.Label tenderLabel;
         private System.Windows.Forms.TextBox tenderBox;
         private System.Windows.Forms.Button newOrderButton;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label tryCatchLabel;
     }
 }
 
