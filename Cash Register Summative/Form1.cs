@@ -20,6 +20,8 @@ namespace Cash_Register_Summative
         double change = 0;
         double subtotal = 0;
         double taxPrice = 0;
+        double carrotPrice = 0;
+        double chocolatePrice = 0;
         const double CARROTCOST = 3.25;
         const double CHOCCHIPCOST = 3.5;
         const double BLUEBERRYCOST = 2.9;
@@ -47,7 +49,10 @@ namespace Cash_Register_Summative
         private void subtotalButton_Click(object sender, EventArgs e)
         {
             //calculate the total before tax
-            subtotal = cmQuantity * CARROTCOST + ccmQuantity * CHOCCHIPCOST + bmQuantity * BLUEBERRYCOST;
+            subtotal = 
+            carrotPrice = cmQuantity * CARROTCOST 
+            chocolatePrice = ccmQuantity * CHOCCHIPCOST
+            blueberryPrice = bmQuantity * BLUEBERRYCOST;
             subtotalLabel.Text = Convert.ToString(subtotal);
         }
 
